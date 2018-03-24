@@ -1,10 +1,4 @@
-def is_palindrome(x):
-    x = str(x)
-    max_len = len(x)
-    for i in range(max_len):
-        if x[i] != x[-(i+1)]:
-            return False
-    return True
+from utils.util import is_palindrome
 
 # nb_digits = 2
 nb_digits = 3

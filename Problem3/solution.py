@@ -1,4 +1,5 @@
 import math
+from utils.util import is_prime
 
 number = 600851475143
 # number = 13195

@@ -14,12 +14,7 @@ For N=20, the list is [1, 5, 7, 9, 11, 13, 16, 17, 19]
 """
 
 import math 
-
-def is_prime(n):
-    for i in range(2, int(math.sqrt(n)+1)):
-        if n % i == 0:
-            return False
-    return True
+from utils.util import is_prime
 
 def list_to_prime(x):
     res = []

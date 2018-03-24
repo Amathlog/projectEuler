@@ -1,12 +1,4 @@
-def fibo(max_value=-1):
-    a = 1
-    b = 2
-    yield a
-    while True:
-        a, b = b, a+b
-        yield a
-        if max_value != -1 and b > max_value:
-            break
+from utils.util import fibo
 
 res = 0
 for x in fibo(4000000):
