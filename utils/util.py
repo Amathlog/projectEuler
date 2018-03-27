@@ -27,3 +27,18 @@ def fibo(max_value=-1):
         yield a
         if max_value != -1 and b > max_value:
             break
+
+def get_divisors(n):
+    if n == 1:
+        return [1]
+    res = [1, n]
+    for i in range(2, int(math.sqrt(n)) + 1):
+        if n % i == 0:
+            res.append(i)
+            if n // i != i:
+                res.append(n // i)
+    return sorted(res)
+
+if __name__ == "__main__":
+    for i in range(1, 10):
+        print(i, ":", get_divisors(i))
