@@ -39,6 +39,14 @@ def get_divisors(n):
                 res.append(n // i)
     return sorted(res)
 
+computed_factorielles = {0: 1}
+
+def factorielle(n):
+    if n in computed_factorielles:
+        return computed_factorielles[n]
+    computed_factorielles[n] = n * factorielle(n-1)
+    return computed_factorielles[n]
+
 if __name__ == "__main__":
     for i in range(1, 10):
         print(i, ":", get_divisors(i))
