@@ -2,3 +2,4 @@ ProjectEuler.egg-info/
 *.pyc
 *.code-workspace
 .vscode
+.idea
