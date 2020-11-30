@@ -1,2 +1,2 @@
 # projectEuler
-Solutions for ProjectEuler.net
+Solutions for ProjectEuler.net 
