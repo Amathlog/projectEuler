@@ -47,6 +47,14 @@ def factorielle(n):
     computed_factorielles[n] = n * factorielle(n-1)
     return computed_factorielles[n]
 
+def _getThreads():
+    import os, sys
+    """ Returns the number of available threads on a posix/win based system """
+    if sys.platform == 'win32':
+        return (int)(os.environ['NUMBER_OF_PROCESSORS'])
+    else:
+        return (int)(os.popen('grep -c cores /proc/cpuinfo').read())
+
 if __name__ == "__main__":
     for i in range(1, 10):
         print(i, ":", get_divisors(i))
