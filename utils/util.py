@@ -10,6 +10,21 @@ def is_prime(n):
             return False
     return True
 
+def get_primes(n):
+    if n <= 0:
+        return
+
+    yield 1
+    if n == 1:
+        return
+    yield 2 
+    if n == 2:
+        return
+    
+    for i in range(3, n+1, 2):
+        if is_prime(i):
+            yield i
+
 def is_palindrome(x):
     x = str(x)
     max_len = len(x)
