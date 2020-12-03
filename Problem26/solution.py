@@ -149,10 +149,10 @@ def find_max_decimal_cycle_mt(d: int):
 if __name__ == "__main__":
     import time
 
-    D = 100000
+    D = 1000
 
     start = time.perf_counter()
-    #find_max_decimal_cycle(D)
+    find_max_decimal_cycle(D)
     duration = time.perf_counter() - start
 
     print(f"Single thread: {duration} s")
