@@ -1,7 +1,2 @@
 #!/bin/bash
-
-mkdir Problem$1
-cd Problem$1
-touch problem.txt
-touch solution.py
-cd ..
+python create_new_folder.py %1
