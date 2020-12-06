@@ -13,7 +13,7 @@ def get_sum(n: int, powers: List[int]):
     return res
 
 for i in range(2, 1000000):
-    if i == get_sum(i, all_fifth_powers):
+    if i == get_sum(i, all_powers):
         final_res.append(i)
 
 print(sum(final_res))
